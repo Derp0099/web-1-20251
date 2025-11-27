@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 4</title>
+    <style>
+                :root {
+            --gap: 1rem;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+            margin: 0px;
+            background-color: #ffffff;
+            color: #222;
+            place-items: center;
+
+        }
+
+        header,
+        main,
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0.75rem 1rem;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.884);
+            border: 1px solid #e6e6e9;
+            border-radius: .75rem;
+            padding: 1rem 3rem;
+            margin: 0.75rem 0;
+
+        }
+
+        button {
+            border: 1px solid #1e88e5;
+            background: #0062ff;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        .sampingan {
+            display: flex;
+            gap: var(--gap);
+            align-items: flex-end;
+        }
+
+        .note {
+            opacity: 0.5;
+        }
+
+        p {
+            margin-top: 3px;
+            margin-bottom: 5px;
+        }
+
+        .hari {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        input[type="checkbox"]{
+            color: #858687;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="search"],
+        input[type="color"],
+        input[type="file"],
+        select,
+        textarea,
+        input[type="range"] {
+            width: 100%;
+            max-width: 1000px;
+            padding: 1rem 2rem;
+            border: 1px solid #cfd3d8;
+            border-radius: .5rem;
+            background: #fff;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Volunteer Sign Up Form</h1>
+            <p>Please fill out the following to become a volunteer.</p>
+            <label>First Name</label>
+            <input type="text" placeholder="Enter your first name">
+            <label for="">Last Name</label>
+            <input type="text" placeholder="Enter your last name">
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your email address" required>
+            <label>Phone</label>
+            <input type="tel" placeholder="Enter your phone number">
+            <label for="">Date of Birth</label>
+            <input type="date" placeholder="Select your date of birth">
+            <label for="">Preferred Volunteer Role</label>
+            <select>
+                <option value="">Select your preferred volunter role</option>
+            </select>
+            <h1>Availability</h1>
+            <label>Days Availabe</label>
+            <p>Select the days you are available to volunteer.</p>
+            <div class="hari">
+            <p><input type="checkbox" name="" id="">Monday</p>
+            <p><input type="checkbox" name="" id="">Tuesday</p>
+            <p><input type="checkbox" name="" id="">Wednesday</p>
+            <p><input type="checkbox" name="" id="">Thursday</p>
+            <p><input type="checkbox" name="" id="">Friday</p>
+            <p><input type="checkbox" name="" id="">Saturday</p>
+            <p><input type="checkbox" name="" id="">Sunday</p>
+            </div>
+            <h1>Skill and Interests</h1>
+            <label>Skill and Experience</label>
+            <input type="text" style="padding: 50px;" placeholder="Enter your skills and experience.">
+            <small>Please describe your skills and experience, if any , that would be
+                relevant to the volunteer role.</small><br>
+                <br>
+            <label for="">Interests</label><br>
+            <small>Select your interests.</small>
+            <div style="display:grid; grid-template-columns: repeat(2, 1fr);">
+            <p><input type="checkbox" name="" id="">Animals</p>
+            <p><input type="checkbox" name="" id="">Elderly</p>
+            <p><input type="checkbox" name="" id="">Health</p>
+            <p><input type="checkbox" name="" id="">Poverty</p>
+            <p><input type="checkbox" name="" id="">Children</p>
+            <p><input type="checkbox" name="" id="">Environment</p>
+            <p><input type="checkbox" name="" id="">Homeless</p>
+            </div>
+            <br>
+            <p><input type="checkbox">I agree to the terms and conditions
+            of the volunteer program.</p>
+            <button>Submit</button>
+        </section>
+    </main>
+    
+</body>
+</html>
